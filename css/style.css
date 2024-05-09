@@ -5,9 +5,15 @@
 }
 
 @font-face {
-    /* Weights: 400, 700 */
-    font-family: "Roboto";
+    font-family: "Roboto Regular";
     src: url('/assets/fonts/Roboto-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url('/assets/fonts/Roboto-Bold.ttf');
+    font-weight: 700;
 }
 
 :root{
@@ -16,4 +22,113 @@
     --charcoal-grey: hsl(235, 18%, 26%);
     --grey: hsl(231, 7%, 60%);
     --white: hsl(0, 0%, 100%);
+}
+
+html,body{
+    height: 100%;
+    background-color: var(--grey);
+}
+
+main{
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: var(--dark-slate-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 850px;
+    height: 530px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--white);
+    border-radius: 25px;
+    margin: 0 2%;
+}
+
+.container-left{
+    width: 50%;
+    height: 100%;
+    padding: 80px 0 80px 60px;
+}
+
+.container-left h1{
+    font-family: "Roboto Bold";
+    font-size: 48px;
+}
+
+.container-left p{
+    font-family: "Roboto Regular";
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.container-left .content-list{
+    font-family: "Roboto Regular";
+    font-size: 16px;
+    list-style-image: url('../assets/images/icon-list.svg');
+}
+
+.content-list ul{
+    padding-left: 28px;
+}
+
+.content-list ul li{
+    padding-left: 10px;
+    line-height: 25px;
+}
+
+.form{
+    font-family: "Roboto Bold";
+    font-size: 14px;
+    padding: 30px 0;
+}
+
+.form input[type=text]{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 20px;
+    border: 1px solid var(--grey);
+    color: var(--grey);
+    border-radius: 6px;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+
+.form button[type=submit]{
+    font-family: "Roboto Bold";
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 6px;
+    margin: 10px 0;
+    font-size: 14px;
+    color: var(--white);
+    border: 0;
+    background-color: var(--dark-slate-grey);
+    cursor: pointer;
+}
+
+.container-right{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.img{
+    position: absolute;
+    top: 50%;
+    left: 150%;
+    transform: translate(-150%,-50%);
+    width: 400px;
+    padding-top: 493px;
+    background-image: url('../assets/images/illustration-sign-up-desktop.svg');
+    background-size: 100% 100%;
+    background-position: center;
 }
