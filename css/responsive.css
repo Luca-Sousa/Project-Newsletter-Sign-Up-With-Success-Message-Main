@@ -17,16 +17,108 @@
 
 @media screen and (max-width:730px){
 
+    html,body{
+        background-color: var(--white);
+    }
+
     .container{
         width: 100%;
         height: 100%;
         flex-direction: column;
-        justify-content: initial;
         border-radius: 0;
+        margin: 0;
+    }
+
+    .container-left{
+        order: 2;
+        width: 100%;
+        height: 50%;
+        padding: 0 70px;
+    }
+    
+    .container-right{
+        order: 1;
+        width: 100%;
+        height: 50%;
     }
 
     .container-right .img{
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+        padding-top: 400px;
         background-image: url('../assets/images/illustration-sign-up-mobile.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-attachment: fixed;
+    }
+
+}
+
+@media screen and (max-width:500px){
+
+    .container-left{
+        height: 65%;
+        padding: 0 40px;
+    }
+
+    .container-right .img{
+        height: 35%;
+    }
+
+}
+
+@media screen and (max-width:450px){
+
+    .container-left{
+        height: 80%;
+        padding: 0 20px;
+    }
+
+    .container-right .img{
+        height: 20%;
+    }
+
+}
+
+@media screen and (max-width:385px){
+
+    .container-left{
+        height: 90%;
+    }
+
+    .container-right .img{
+        height: 10%;
+    }
+
+    .container2{
+        width: 100%;
+        height: 100%;
+        justify-content:flex-start;
+        border-radius: 0;
+        margin: 0;
+        padding: 30px;
+    }
+
+    .container2 img{
+        width: 70px;
+        height: 70px;
+        margin-top: 150px;
+    }
+
+    .container2 h1{
+        margin: 40px 0;
+    }
+
+    .container2 p{
+        font-family: "Roboto Regular";
+        font-size: 1rem;
+    }
+
+    .container2 input[type=submit]{
+        margin-top: 300px;
     }
 
 }
