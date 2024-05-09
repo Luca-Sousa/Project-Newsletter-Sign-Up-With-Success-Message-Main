@@ -9,6 +9,7 @@
   <title>Project - Newsletter sign-up form with success message</title>
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 
@@ -30,10 +31,13 @@
         </div>
 
         <div class="form">
-          <form>
-            Email address<br>
+          <form id="form1">
+            <div class="form-text">
+              <p>Email address</p>
+              <p class="format-p">Valid Email required</p>
+            </div>
             <input type="text" name="email" placeholder="email@company.com">
-            <button type="submit">Subscribe to monthly newsletter</button>
+            <input type="submit" name="acao" value="Subscribe to monthly newsletter">
           </form>
         </div>
 
@@ -47,19 +51,23 @@
 
     </section>
 
+    <section class="container2">
 
-  <!-- Success message start 
+      <img src="assets/images/icon-list.svg" alt="icon-list">
 
-  Thanks for subscribing!
+      <h1>Thanks for subscribing!</h1>
+      
+      <p>A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. Please open it and click the button inside to confirm your subscription.</p>
+  
+      <input type="submit" name="acao" value="Dismiss message">
 
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  Success message end -->
+    </section>
+  
 
   </main>
+
+  <script src="js/jquery-3.7.1.js"></script>
+  <script src="js/functions.js"></script>
   
 </body>
 </html>

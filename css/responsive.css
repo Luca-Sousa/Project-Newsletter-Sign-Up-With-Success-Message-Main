@@ -1,0 +1,32 @@
+@media screen and (max-width:850px){
+
+    .container-right .img{
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 380px;
+        padding-top: 480px;
+    }
+
+    .container-left{
+        width: 50%;
+        height: 100%;
+        padding: 50px 10px 60px 40px;
+    }
+
+}
+
+@media screen and (max-width:730px){
+
+    .container{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: initial;
+        border-radius: 0;
+    }
+
+    .container-right .img{
+        background-image: url('../assets/images/illustration-sign-up-mobile.svg');
+    }
+
+}
